@@ -2,7 +2,7 @@ import serial
 import time
 
 if __name__ == "__main__":
-    ser = serial.Serial('/dev/ttyACM0')  # open serial port
+    ser = serial.Serial('/dev/ttyACM1')  # open serial port
     ser.dsrdtr = False
     ser.setDTR(level=False)
     print(ser.name)         # check which port was really used

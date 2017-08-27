@@ -25,9 +25,6 @@ void loop() {
   if (Serial.available()) {
     int amplitude = Serial.parseInt();
     convertAmplitudeToLight(amplitude);
-//    Serial.read();
-//    digitalWrite(LED_BUILTIN, HIGH);
-//    delay(50);
   }
   else {
     digitalWrite(LED_BUILTIN, LOW);
